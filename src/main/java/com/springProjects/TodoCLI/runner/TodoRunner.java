@@ -101,6 +101,26 @@ public class TodoRunner implements CommandLineRunner {
                         OptionLoop = true;
                         break;
                     }
+
+                    case 4:{
+                        System.out.println("Enter the status");
+                        String status=sc.nextLine();
+                        List<Todo> onlyStatus=todoService.printByStatus(status);
+                        if(onlyStatus.isEmpty())
+                        {
+                            System.out.println("No tasks with this status !!!");
+                        }
+                        else{
+                            int id=0;
+                            for(Todo todo:onlyStatus)
+                            {
+                                id++;
+                                System.out.println("ID= "+id+"  Task= "+todo.getTask()+"     Status= "+todo.getStatus());
+                            }
+                        }
+                        OptionLoop=true;
+                        break;
+                    }
                     case 5: {
                         OptionLoop=false;
                         break;

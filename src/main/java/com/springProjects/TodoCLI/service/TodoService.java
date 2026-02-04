@@ -60,6 +60,18 @@ public class TodoService{
         return adding;
     }
 
+    public List<Todo> printByStatus(String status)
+    {
+        List<Todo> allTodos=todoRepository.loadTodos();
+        List<Todo> onlyStatus=new ArrayList<>();
+        for(Todo todo:allTodos){
+            if(todo.getStatus().equals(status)){
+                onlyStatus.add(todo);
+            }
+        }
+        return onlyStatus;
+    }
+
 
 
 

@@ -2,4 +2,20 @@
   "id" : 1,
   "task" : "Study",
   "status" : "progress"
+}, {
+  "id" : 2,
+  "task" : "gym",
+  "status" : "progress"
+}, {
+  "id" : 3,
+  "task" : "running",
+  "status" : "later"
+}, {
+  "id" : 4,
+  "task" : "coding",
+  "status" : "completed"
+}, {
+  "id" : 5,
+  "task" : "eating",
+  "status" : "progress"
 } ]
