@@ -32,3 +32,15 @@ how Spring Boot can be used beyond web applications.
 ---
 
 ## 🧱 Project Structure
+spring-boot-cli-todo
+├── data
+│ └── data.json
+├── src
+│ └── main
+│ └── java
+│ ├── model
+│ ├── repository
+│ ├── service
+│ └── runner
+├── pom.xml
+└── README.md
