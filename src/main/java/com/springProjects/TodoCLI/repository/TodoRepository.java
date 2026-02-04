@@ -14,7 +14,7 @@ import java.util.List;
 public class TodoRepository{
 
 
-    private static final String FILE_Path="data/data.json";
+    private static final String FILE_Path=System.getProperty("user.dir")+"/ToDoCLI/TodoCLI/src/main/java/com/springProjects/TodoCLI/data/data.json";
     ObjectMapper mapper=new ObjectMapper();
 
 
